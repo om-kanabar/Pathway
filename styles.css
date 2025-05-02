@@ -1,0 +1,148 @@
+/* 
+Om Kanabar 2025
+All Rights Reserved
+*/
+
+
+/* s1 bc: #adadad */
+html,
+body{
+    background-color:#323b3d;
+    margin: 0;
+    font-family: Josefin Sans;
+    color: aliceblue;
+    transition: 0.5s ease;
+ }
+.footer {
+    width: 100%;
+    color: rgb(36, 36, 36);
+    transition: 0.5s ease-in-out;
+}
+.footer a{
+    color: rgb(13, 43, 58);
+    transition: 0.5s ease-in-out;
+}
+.footer:hover{
+    color: rgb(233, 233, 233);
+    transition: 0.5s ease-in-out;
+}
+.footer:hover a{
+    color: rgb(1, 170, 255);
+    transition: 0.5s ease-in-out;
+}
+.footer:hover a:hover{
+    color: rgb(117, 200, 255);
+    transition: 0.5s ease-in-out;
+}
+.lightfooter{
+    width: 100%;
+    color: rgb(128, 128, 128);
+    transition: 0.5s ease-in-out;
+}
+.lightfooter:hover{
+    width: 100%;
+    color: rgb(31, 31, 31);
+    transition: 0.5s ease;
+}
+.lightfooter a{
+    color: rgb(87, 131, 193);
+    transition: 0.5s ease;
+}
+.lightfooter:hover a{
+    color: rgb(24, 56, 102);
+    transition: 0.5s ease;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Limelight;
+    font-size: 200px;
+    margin-top: 25vh;
+    transition: 0.5s ease;
+}
+.main span{
+    color: aliceblue;
+    transition: 0.5 ease;
+}
+.main span:hover{
+    color: rgb(90, 138, 181);
+}
+.main:hover{
+    color: rgb(90, 138, 181);
+    transition: 0.5s ease;
+}
+#click-arrow {
+    display: block; /* Places the arrow and text on a new line */
+    font-size: 20px; /* Adjust the size of the arrow and text */
+    font-family: Josefin Sans; /* Matches the font of your webpage */
+    color: aliceblue; /* Matches the color scheme */
+    margin-top: 10px; /* Adds spacing between "Elements" and the arrow */
+    animation: bounce 1s infinite; /* Adds a bounce effect */
+    text-align: center;
+    transition: color 0.5s ease;
+}
+
+/* Keyframe animation for the bounce effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(4%); /* Starting and ending position */
+    }
+    50% {
+        transform: translateX(-2%); /* Moves Left slightly */
+    }
+}
+.h{
+    display: none !important;
+    background-color: transparent;
+    color: transparent;
+    transition: 0.5s ease;
+}
+.s1 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+    width: 100vw; 
+    margin: auto;
+    position: relative;
+}
+
+.s1 p{
+    margin: 0;
+    font-size: 100px;
+    padding: 2.5%;
+    font-family: Josefin Sans;
+    color: aliceblue;
+    flex-basis: 20%; 
+    text-align: center; 
+}
+.nonActiveElement{
+    color:  #6b6b6b;
+    transition: color 0.3s ease;
+}
+
+.nonActiveElement:hover {
+    color: rgb(163, 43, 43);
+    animation: noShake 0.4s ease-in-out 1;
+}
+.aE{
+    font-family: Limelight !important;
+}
+.aEwind{
+    font-family: Limelight !important;
+    transition: 0.5s ease;
+}
+.aEwind:hover{
+    color: rgb(56, 128, 163)
+}
+
+@keyframes noShake {
+  0%   { transform: translateX(0);   color: inherit; }
+  20%  { transform: translateX(-5px); color: rgb(163, 43, 43); }
+  40%  { transform: translateX(5px);  color: rgb(163, 43, 43); }
+  60%  { transform: translateX(-5px); color: rgb(163, 43, 43); }
+  80%  { transform: translateX(5px);  color: rgb(163, 43, 43); }
+  100% { transform: translateX(0);   color: rgb(163, 43, 43); }
+}
