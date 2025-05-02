@@ -25,17 +25,17 @@ function transitionScreen() {
     }, 1500);
 }
 
-const wind = document.getElementById("wind")
+const fire = document.getElementById("fire")
 function windTrans() {
     // Set the body and elementMainP to black
     body.style.backgroundColor = "black";
-    wind.style.color = "black";
-    wind.style.opacity = "0";
+    fire.style.color = "black";
+    fire.style.opacity = "0";
     s1.style.opacity="0"
     // Wait for 2500ms
     setTimeout(() => {
         s1.remove()
-        body.style.backgroundColor = "rgb(56, 128, 163)";
+        body.style.backgroundColor = "rgb(217, 105, 53)";
         footer.className = "text-center footer mt-auto"
     }, 1500);
 }
@@ -49,4 +49,4 @@ function section1(){
 }
 
 elementMainP.addEventListener("click", transitionScreen);
-wind.addEventListener("click", windTrans)
+fire.addEventListener("click", windTrans)

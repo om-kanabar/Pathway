@@ -23,6 +23,7 @@ body{
     transition: 0.5s ease-in-out;
 }
 .footer:hover{
+    font-size: 17.5px;
     color: rgb(233, 233, 233);
     transition: 0.5s ease-in-out;
 }
@@ -40,6 +41,7 @@ body{
     transition: 0.5s ease-in-out;
 }
 .lightfooter:hover{
+    font-size: 17.5px;
     width: 100%;
     color: rgb(31, 31, 31);
     transition: 0.5s ease;
@@ -74,13 +76,18 @@ body{
 }
 #click-arrow {
     display: block; /* Places the arrow and text on a new line */
-    font-size: 20px; /* Adjust the size of the arrow and text */
+    font-size: 30px; /* Increased size of the arrow and text */
     font-family: Josefin Sans; /* Matches the font of your webpage */
     color: aliceblue; /* Matches the color scheme */
     margin-top: 10px; /* Adds spacing between "Elements" and the arrow */
     animation: bounce 1s infinite; /* Adds a bounce effect */
     text-align: center;
     transition: color 0.5s ease;
+}
+
+#click-arrow strong {
+    font-size: 45px; /* You can further increase the arrow size here */
+    transition: transform 0.2s ease-in-out; /* Adds smooth scaling on hover */
 }
 
 /* Keyframe animation for the bounce effect */
@@ -130,12 +137,13 @@ body{
 .aE{
     font-family: Limelight !important;
 }
-.aEwind{
+.aEfire{
     font-family: Limelight !important;
     transition: 0.5s ease;
 }
-.aEwind:hover{
-    color: rgb(56, 128, 163)
+.aEfire:hover{
+    margin-bottom: 5%;
+    color: rgb(217, 105, 53);
 }
 
 @keyframes noShake {
