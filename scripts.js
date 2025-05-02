@@ -3,11 +3,13 @@ Om Kanabar 2025
 All Rights Reserved
 */
 
+const section1 = document.getElementById("s1")
+const section2 = document.getElementById("s2")
 const elementMainP = document.getElementById("elements");
 const body = document.body;
 const footer = document.getElementById("footer")
 const clickme = document.getElementById("click-arrow")
-const s1 = document.getElementById("s1")
+const fireT = document.getElementById("fire")
 
 function transitionScreen() {
     // Set the body and elementMainP to black
@@ -18,35 +20,29 @@ function transitionScreen() {
     // Wait for 2500ms
     setTimeout(() => {
         elementMainP.remove();
+        section1.classList.replace("h","s1")
         body.style.backgroundColor = "#adadad";
         footer.className = "text-center lightfooter mt-auto"
         elementMainP.style.opacity = "0";
-        section1();
-    }, 1500);
+    }, 2500);
 }
 
-const fire = document.getElementById("fire")
-function windTrans() {
-    // Set the body and elementMainP to black
+function fireTrans(){
+        // Set the body and elementMainP to black
     body.style.backgroundColor = "black";
-    fire.style.color = "black";
-    fire.style.opacity = "0";
-    s1.style.opacity="0"
+    fireT.style.color = "black";
+    section1.style.color = "black !important";
+    section1.style.opacity = "0"
+    
     // Wait for 2500ms
     setTimeout(() => {
-        s1.remove()
-        body.style.backgroundColor = "rgb(217, 105, 53)";
-        footer.className = "text-center footer mt-auto"
-    }, 1500);
-}
-
-
-/* Sections */
-
-function section1(){
-    s1.classList.replace("h","s1")
-    footer.className = "text-center lightfooter mt-auto"
+        fireT.remove();
+        section1.remove();
+        section2.classList.replace("h","s2");
+        body.style.backgroundColor = "#c28f43";
+        footer.className = "text-center ofooter mt-auto"
+    }, 2500);
 }
 
 elementMainP.addEventListener("click", transitionScreen);
-fire.addEventListener("click", windTrans)
+fireT.addEventListener("click", fireTrans)
