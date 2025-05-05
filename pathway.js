@@ -1,4 +1,4 @@
-/* 
+/*
 Om Kanabar 2025
 All Rights Reserved
 */
@@ -10,6 +10,9 @@ const body = document.body;
 const footer = document.getElementById("footer")
 const clickme = document.getElementById("click-arrow")
 const fireT = document.getElementById("fire")
+const windInT = document.getElementById("windS1poem")
+const waterInT = document.getElementById("waterS1poem")
+const earthInT = document.getElementById("earthS1poem")
 
 function transitionScreen() {
     // Set the body and elementMainP to black
@@ -43,6 +46,12 @@ function fireTrans(){
         footer.className = "text-center ofooter mt-auto"
     }, 2500);
 }
+
+
+function windTrans(){
+  
+}
+
 
 elementMainP.addEventListener("click", transitionScreen);
 fireT.addEventListener("click", fireTrans)
