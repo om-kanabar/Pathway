@@ -1,4 +1,4 @@
-/* 
+/*
 Om Kanabar 2025
 All Rights Reserved.
 */
@@ -114,6 +114,15 @@ body{
     75% { transform: translateX(-10px); }
     100% { transform: translateX(0); }
 }
+/* Keyframe animation for the bouncing effect */
+@keyframes smallBounce {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending position */
+    }
+    50% {
+        transform: translateY(-5px); /* Slight upward movement */
+    }
+}
 .aEfire {
     font-family: 'Limelight', cursive;
     font-size: 2rem;
@@ -142,43 +151,68 @@ body{
     color: aliceblue; /* Return to gray */
     }
 }
-@keyframes wIpulse {
-    0% {
-        transform: scale(1);
-        color: aliceblue;
-    }
-    50% {
-        transform: scale(1.175);
-        color: rgb(197, 245, 251);
-    }
-    100% {
-        transform: scale(1);
-        color: aliceblue;
-    }
-}
 .s2{
     text-align: center;
     font-size: 20px;
 }
-.s2 p{
+.s2 span{
     font-size: 20px;
 }
 #windS1poem {
     font-family: 'Limelight', cursive;
     font-size: 30px;
     color: aliceblue;
-    animation: wIpulse 1.5s infinite;
-    transition: all 0.5s ease;
     margin-bottom: -1vh;
     display: inline-flex;
+    transition: 0.5s all ease;
+    animation: smallBounce 1s infinite;
 }
-#windS1poem:hover {
+#waterS1poem {
+    font-family: 'Limelight', cursive;
+    font-size: 30px;
+    color: aliceblue;
+    margin-bottom: -1vh;
+    display: inline-flex;
+    transition: 0.5s all ease;
+    animation: smallBounce 1s infinite;
+}
+
+#waterS1poem:hover {
+    animation: none; /* Stop the bounce animation */
+    transform: translateY(0); /* Return to starting position */
     font-size: 31px !important;
     padding-right: -2vw !important;
     padding-left: -2vw !important;
-    animation-play-state: paused;
-    color: rgb(197, 245, 251) !important;
+    color: #1549d6 !important;
+    transition: 0.5s all ease;
 }
+#earthS1poem {
+    font-family: 'Limelight', cursive;
+    font-size: 30px;
+    color: aliceblue;
+    margin-bottom: -1vh;
+    display: inline-flex;
+    animation: smallBounce 1s infinite;
+    transition: 0.5s all ease;
+}
+
+#earthS1poem:hover {
+    font-size: 31px !important;
+    padding-right: -2vw !important;
+    padding-left: -2vw !important;
+    color: #66d935 !important;
+    transition: 0.5s all ease;
+}
+
+/*Really don't know why I have to us alot of the !important tags but it just works. So, DON'T TOUCH IT.*/
+#windS1poem:hover {
+    animation: none; /* Stop the bounce animation */
+    transform: translateY(0); /* Return to starting position */
+    font-size: 31px !important;
+    padding-right: -2vw !important;
+    padding-left: -2vw !important;
+    color: rgb(197, 245, 251) !important;
+  
 .title{
     text-align: center;
     color: inherit;
