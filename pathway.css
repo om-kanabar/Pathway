@@ -33,13 +33,13 @@ body{
 }
 .ofooter{
     width: 100%;
-    color:rgb(159, 114, 46);
+    color:#874120;
     transition: 0.5s ease-in-out;
 }
 .ofooter:hover{
     font-size: 20px;
     width: 100%;
-    color: rgb(31, 31, 31);
+    color: aliceblue;
     transition: 0.5s ease;
 }
 .main{
@@ -123,7 +123,7 @@ body{
 }
 
 .aEfire:hover {
-    color: rgb(194, 143, 67); /* Final orange color on hover */
+    color: rgb(217, 105, 53);; /* Final orange color on hover */
     animation: none; /* Stop the pulse animation */
     font-size: 115px;
 }
@@ -135,7 +135,7 @@ body{
     }
     50% {
     transform: scale(1.1);
-    color: rgb(194, 143, 67); /* Change to orange at the peak */
+    color: rgb(217, 105, 53) /* Change to orange at the peak */
     }
     100% {
     transform: scale(1);
@@ -144,16 +144,16 @@ body{
 }
 @keyframes wIpulse {
     0% {
-    transform: scale(1);
-    color: aliceblue; /* Start at gray */
+        transform: scale(1);
+        color: aliceblue;
     }
     50% {
-    transform: scale(1.3);
-    color: rgb(167, 228, 235); /* Change to orange at the peak */
+        transform: scale(1.175);
+        color: rgb(197, 245, 251);
     }
     100% {
-    transform: scale(1);
-    color: aliceblue; /* Return to gray */
+        transform: scale(1);
+        color: aliceblue;
     }
 }
 .s2{
@@ -161,24 +161,28 @@ body{
     font-size: 20px;
 }
 .s2 p{
-    font-size: 15px !important;
+    font-size: 20px;
 }
-#windS1poem{
+#windS1poem {
     font-family: 'Limelight', cursive;
     font-size: 30px;
-    color: aliceblue; /* Default gray color */
-    animation: wIpulse 1.5s infinite; /* Continuous pulsing with color change */
-    transition: font-size 0.3s ease, color 0.5s ease; /* Smooth hover transition */
+    color: aliceblue;
+    animation: wIpulse 1.5s infinite;
+    transition: all 0.5s ease;
+    margin-bottom: -1vh;
+    display: inline-flex;
 }
-#windS1poem:hover{
-    color: rgb(167, 228, 235);
-    animation: none; 
-    font-size: 35px;
+#windS1poem:hover {
+    font-size: 31px !important;
+    padding-right: -2vw !important;
+    padding-left: -2vw !important;
+    animation-play-state: paused;
+    color: rgb(197, 245, 251) !important;
 }
 .title{
     text-align: center;
     color: inherit;
-    font-size: 75px;
+    font-size: 100px;
     margin-bottom: -3%;
 }
 .subtitle{

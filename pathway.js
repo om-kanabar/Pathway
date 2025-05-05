@@ -39,7 +39,7 @@ function fireTrans(){
         fireT.remove();
         section1.remove();
         section2.classList.replace("h","s2");
-        body.style.backgroundColor = "#c28f43";
+        body.style.backgroundColor = "rgb(217, 105, 53)";
         footer.className = "text-center ofooter mt-auto"
     }, 2500);
 }
